@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+}
+button,
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+button {
+  cursor: pointer;
+}
+.text_gray {
+  color: gray !important;
+}
+.text_dodgerblue {
+  color: dodgerblue !important;
+}
+/* constanta css start */
+.invoiceStatus {
+  padding: 5px 0;
+  width: 150px;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
+  display: inline-block;
+  font-weight: bolder;
+}
+.used {
+  background: #e4a11b;
+}
+.created {
+  background: #dc4c64;
+}
+.paid {
+  background: #14a44d;
+}
+.text-right {
+  text-align: right;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  padding-right: 20px;
+}
+.p_bilateral {
+  padding: 10px;
+}
+.p-10 {
+  padding-right: 20px;
+  padding-left: 5px;
+}
+.container_box {
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(192, 192, 192, 0.432);
+  padding: 10px;
+  background: white;
+}
+.flex_element {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+/* constanta css end */
+
+/* header css start */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 0 75px;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.line_height {
+  line-height: 20px;
+  color: #64758b;
+}
+.line_height a {
+  color: #64758b;
+}
+.footer {
+  text-align: center;
+}
+.empty {
+  width: 20%;
+}
+.homeFill {
+  color: dodgerblue;
+}
+.logo {
+  font-size: 14px;
+  color: #64758b;
+  text-transform: uppercase;
+  font-weight: bolder;
+  gap: 0;
+}
+.logo:hover {
+  color: #64758b;
+}
+.phone_logo {
+  background-color: #dadafc;
+  padding: 10px 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(69 71 169);
+}
+.justifyCenter {
+  justify-content: center;
+}
+.menuLink {
+  background: transparent;
+  display: flex;
+}
+.menuLink .ant-menu-overflow-item {
+  color: #212121;
+}
+.menuLink .ant-menu-overflow-item:hover {
+  background: DeepSkyBlue !important;
+}
+/* header css end */
+
+/* siteBar css start */
+.gridContainer {
+  display: flex;
+  align-items: start;
+}
+.siteBar_menu {
+  margin-top: 10px;
+  border-radius: 0 10px 10px 0;
+  align-self: stretch;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 65px;
+  width: 20%;
+  left: 0;
+}
+/* siteBar css end */
+
+.content {
+  width: 80%;
+}
+
+/* no data css start */
+.not_found_text h1 {
+  color: gray;
+  font-size: 45px;
+}
+.not_found_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.noData .flex_element {
+  justify-content: center;
+  display: flex;
+}
+.noData .flex_element figure {
+  width: 50%;
+}
+.noData .flex_element img {
+  width: 100%;
+  object-fit: cover;
+}
+.linkBreadCrumb * {
+  font-size: 16px;
+}
+.linkBreadCrumb {
+  display: flex;
+  align-items: center;
+}
+.linkBreadCrumb a:hover {
+  background: transparent;
+  color: gray;
+}
+.relative {
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.success {
+  background-color: #14a44d !important;
+}
+.error {
+  background-color: #ff3333 !important;
+}
+
+.swal2-popup {
+  color: white;
+}
+.swal2-popup button {
+  color: white;
+}
+
+.icon_class {
+  font-size: 20px;
+  color: dodgerblue;
+  margin-right: 10px;
+}
+.icon_class:hover {
+  opacity: 0.8;
+}
+
+/* loading css start */
+.loading {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  overflow: hidden;
+  background-color: #ddd;
+  left: 0;
+  top: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.spinner {
+  position: absolute;
+  left: -30%;
+  height: 3px;
+  width: 30%;
+  background-color: dodgerblue;
+  -webkit-animation: lineAnim 2s linear infinite;
+  -moz-animation: lineAnim 2s linear infinite;
+  animation: lineAnim 2s linear infinite;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.bg_change {
+  background-color: coral;
+}
+
+.logout {
+  color: #ff3333;
+  cursor: pointer;
+  user-select: none;
+}
+.logout:hover {
+  text-decoration: solid #ff3333;
+  text-decoration: underline;
+}
+.logout:active {
+  color: gray;
+}
+.flex_404 {
+  display: flex;
+  justify-content: center;
+}
+.img_404 {
+  width: 35%;
+}
+.img_404 img {
+  width: 100%;
+  object-fit: cover;
+}
+@keyframes lineAnim {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.PhoneInputCountryIcon,
+.PhoneInputCountry {
+  display: none;
+}
+/* loading css end */
